@@ -1,5 +1,5 @@
 # 2024-1-Python_advanced
-2024-1 파이썬 기초
+2024-1 파이썬 심화
 
 [2023 2nd semester] Study about Python
 
