@@ -1,0 +1,26 @@
+| 작성자  |   날짜   | 언어    |
+| ------- | --------- | ------- |
+| 김민주    | 24.03.26  | Python  |
+
+# Problem_Title
+
+ - [문제 링크](https://www.acmicpc.net/problem/2941)
+
+
+### 풀이 과정  
+
+크로아티아 문자를 리스트로 선언하고 입력받은 단어에 크로아티아 문자가 있을 때  replace 함수를 사용하여 '!'로 바꾸어주었다. 그리고 문자열의 길이를 출력하여 몇개의 크로아티아 알파벳이 쓰였는지 구하였다.
+
+### 소스 코드
+
+alphabet = input()
+croatia = ['c=','c-','dz=','d-','lj','nj','s=','z=']
+for i in croatia:
+    alphabet = alphabet.replace(i,'!')
+print(len(alphabet))
+print("Test")
+```
+
+### 결과 화면
+
+코드 제출 후 성공했습니다 캡처
