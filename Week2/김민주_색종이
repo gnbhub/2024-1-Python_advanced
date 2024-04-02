@@ -1,0 +1,32 @@
+| 작성자  |   날짜   | 언어    |
+| ------- | --------- | ------- |
+| 김민주    | 24.04.02  | Python  |
+
+# Problem_Title
+
+ - https://www.acmicpc.net/problem/2563
+
+
+### 풀이 과정  
+
+
+
+### 소스 코드
+
+```
+n = int(input())
+paper = [[0]*101 for _ in range(101)]
+for _ in range(n):
+    a,b = map(int,input().split())
+    for i in range (a, a+10):
+        for j in range(b, b+10):
+            paper[i][j]=1
+
+area = 0
+for i in paper:
+    area +=sum(i)
+
+print(area)
+```
+
+### 결과 화면
