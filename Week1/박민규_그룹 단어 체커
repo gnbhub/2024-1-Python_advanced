@@ -1,0 +1,14 @@
+N=int(input()) # a(97)~z(122)
+alphabets=[False]*26
+s=False
+cnt=[1]*N #N의 갯수만큼 list값에 1을 초기화
+for i in range(N):
+    text=list(input())
+    for j in range(len(text)):
+        
+            if text.count(text[j])>=2: #만약 2개이상의 문자라면
+                for _ in range(j+1,len(text)-1-list(reversed(text)).index(text[j])):
+                    if text[_]!=text[j]: #2개이상의 문자 양 끝사이에 다른 문자가 있다면
+                        cnt[i]=0 #i 의 cnt 를 0으로(다음번 j에서 중복되어도 계속0가능)
+print(sum(cnt))
+#cnt의 합을 구함.
